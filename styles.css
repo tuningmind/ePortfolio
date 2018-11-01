@@ -1,32 +1,24 @@
-.row-between {
-  display: flex;
-  flex-direction: row;
-  align-content: flex-start; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-.wrap {
-  flex-wrap: wrap; }
-
-.column-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
-
-.header {
-  width: 100vw;
-  height: 4em;
-  padding: 0 2.4em;
-  background-color: rgba(192, 192, 192, 0.6);
-  background-color: rgba(38, 26, 13, 0.7);
+html {
   font-family: 'Courier New';
-  color: white;
-  display: flex;
-  align-items: center; }
+  color: #f8f7ec;
+  color: #e5e1b3;
+  width: 100vw;
+}
 
 main {
-  height: 100vh;
+  height: 100%;
+  width: 100vw;
   background-image: url("./img/radio.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover; 
+  background-attachment: fixed;
+}
 
 a {
   background-color: #585047;
@@ -38,6 +30,58 @@ a {
   font-family: 'Courier New';
   text-decoration: none;
   border-radius: 3px;
-  width: 200px; }
+  width: 200px; 
+}
 
+article {
+  width: 80%;
+  background-color: rgb(38, 26, 13);
+  padding: 2em 3em;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+h2, h3, h4 {
+  font-weight: normal;
+}
+
+p {
+  padding: 2em 0;
+}
+
+.row-between {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start; 
+}
+
+.wrap {
+  flex-wrap: wrap; 
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100vw;
+  height: 4em;
+  padding: 0 2.4em;
+  background-color: rgb(38, 26, 13);
+  font-family: 'Courier New';
+  display: flex;
+  align-items: center; 
+  }
 
