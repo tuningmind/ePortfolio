@@ -11,6 +11,9 @@ html {
   width: 100vw;
 }
 
+body {
+  height: 100vh;
+}
 main {
   height: 100%;
   width: 100vw;
