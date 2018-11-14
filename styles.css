@@ -12,12 +12,21 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 100%;
 }
 main {
   height: 100%;
   width: 100vw;
   background-image: url("./img/radio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
+}
+
+.psy-main {
+  background-image: url("https://cdn3.omidoo.com/sites/default/files/imagecache/full/images/bydate/20130919/shutterstock5883148.jpg");
+  height: 100%;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover; 
   background-attachment: fixed;
@@ -35,25 +44,44 @@ a {
   border-radius: 3px;
   width: 200px; 
 }
+.a-plain {
+  text-decoration: underline;
+  padding: 0;
+  width: auto;
+  border: none;
+  margin: 0;
+  background-color: rgba(0,0,0,0);
+  box-shadow: none;
+  
+
+}
+
+p {
+  margin-bottom: 2em;
+  text-indent: 30px;
+}
 
 article {
-  width: 80%;
+  width: 70%;
   background-color: rgb(38, 26, 13);
   padding: 2em 3em;
   border-radius: 15px;
   margin-top: 40px;
+  margin-left: 10%;
+  border: 3px solid black;
 }
 
 img {
   width: 100%;
+  margin-top: 1em;
 }
 
 h2, h3, h4 {
   font-weight: normal;
 }
 
-p {
-  padding: 2em 0;
+h2, h3 {
+  margin-bottom: 2em;
 }
 
 .row-between {
@@ -86,5 +114,15 @@ p {
   font-family: 'Courier New';
   display: flex;
   align-items: center; 
+  padding-left: 11em;
   }
+
+.quote {
+  padding-left: 2em;
+  text-indent: 0;
+}
+
+.italic {
+  font-style: italic;
+}
 
