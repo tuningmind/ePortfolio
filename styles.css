@@ -15,9 +15,24 @@ body {
   height: 100%;
 }
 
+header {
+  width: 100vw;
+  height: 4em;
+  padding: 2em;
+  background-color: rgb(38, 26, 13);
+  font-family: 'Courier New';
+  font-size: 1.5em;
+  display: flex;
+  align-content: center; 
+  justify-content: center;
+}
+
 main {
   height: 100%;
   width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-image: url("./img/radio.jpg");
   background-repeat: no-repeat;
   background-size: cover; 
@@ -63,12 +78,14 @@ p {
 }
 
 article {
+  display:flex;
+  flex-direction: column;
+  align-content: center;
   width: 70%;
   background-color: rgb(38, 26, 13);
   padding: 2em 3em;
   border-radius: 15px;
   margin-top: 40px;
-  margin-left: 10%;
   border: 3px solid black;
 }
 
@@ -98,25 +115,14 @@ h2, h3 {
 .column-left {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-content: flex-start; 
 }
 
 .column-center {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
 }
-
-.header {
-  width: 100vw;
-  height: 4em;
-  padding: 0 2.4em;
-  background-color: rgb(38, 26, 13);
-  font-family: 'Courier New';
-  display: flex;
-  align-items: center; 
-  padding-left: 11em;
-  }
 
 .quote {
   padding-left: 2em;
