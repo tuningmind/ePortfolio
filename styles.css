@@ -9,7 +9,6 @@ html {
   color: #f8f7ec;
   color: #e5e1b3;
   width: 100vw;
-  height: 100vh;
 }
 
 body {
@@ -31,9 +30,10 @@ header {
 }
 
 main {
-  height: 100%;
-  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .sidebar {
@@ -51,12 +51,14 @@ main {
 }
 
 article {
-  display:grid;
-  grid-template-columns: 400px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40vw;
   background-color: rgb(38, 26, 13);
-  padding: 2em 3em;
+  padding: 4em 3em;
   border-radius: 15px;
-  margin-top: 40px;
+  margin: 40px 0;
   border: 3px solid black;
 }
 
@@ -65,9 +67,12 @@ p {
   text-indent: 30px;
 }
 
+#after-crochet {
+  margin-top: 2em;
+}
+
 img {
   width: 100%;
-  margin-top: 1em;
 }
 
 h2, h3, h4 {
