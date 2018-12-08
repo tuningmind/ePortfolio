@@ -94,8 +94,9 @@ img {
   
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   font-weight: normal;
+  background-color: rgb(38, 26, 13);
 }
 
 h2, h3 {
@@ -103,8 +104,8 @@ h2, h3 {
   padding-left: 2em;
 }
 
-h3, h4 {
-  padding-left: 3em;
+h3, h4, h5 {
+  padding-left: 3rem;
 }
 
 a {
@@ -139,3 +140,20 @@ a {
   font-style: italic;
 }
 
+ul {
+  background-color: rgb(38, 26, 13);
+}
+
+li {
+  padding-left: 4rem;
+  list-style-type: none;
+}
+
+li:last-child {
+  padding-bottom: 2rem;
+}
+
+li li {
+  padding: 0 0 0 5rem;
+  margin: 0;
+}
