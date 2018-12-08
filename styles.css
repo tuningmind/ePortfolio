@@ -20,13 +20,23 @@ body {
 }
 
 header {
-  height: 4em;
-  padding: 1.7em;
+  height: 4.1em;
+  padding: 1.3em 0 1em 2em;
   background-color: rgb(38, 26, 13);
   font-family: 'Courier New';
-  font-size: 1.5em;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.2em;
+}
+
+.main-header {
+  height: 4.5em;
+}
+
+.sub-header {
+  font-size: .8em;
+  padding-top: .5em;
 }
 
 main {
