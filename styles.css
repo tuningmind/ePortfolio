@@ -87,6 +87,8 @@ p {
 
 details {
   padding: 3em;
+  background-color: #ffe6cc;
+  color: rgb(38, 26, 13);
 }
 
 img {
@@ -116,13 +118,17 @@ h3, h4, h5 {
   padding-left: 3rem;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 a {
   background-color: #585047;
   border: 2px solid #dad9d1;
   box-shadow: inset 2px 2px 10px #444038, 2px 2px 5px #090502;
   color: #f4f1d7;
-  margin: 5px;
-  padding: 1em 2em;
+  margin: .5rem;
+  padding: 1rem 2rem;
   font-family: 'Courier New';
   text-decoration: none;
   border-radius: 3px;
@@ -141,7 +147,7 @@ a {
 }
 
 .quote {
-  padding-left: 4em;
+  padding-left: 4rem;
   text-indent: 0;
 }
 
@@ -181,10 +187,14 @@ span {
 }
 
 .hack-indent {
-  padding-left: 3em;
+  padding-left: 3rem;
 }
 
 .mla-reference {
-  text-indent: 2em;
+  text-indent: 2rem;
 }
 
+img#human {
+  background-color: #160d03;
+
+}
