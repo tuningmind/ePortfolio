@@ -193,3 +193,12 @@ span {
 img#human {
   background-color: #160d03;
 }
+
+details {
+  padding: 1rem 0 0 2rem;
+}
+
+details p {
+  padding-left: 1em;
+  width: 35vw;
+}
