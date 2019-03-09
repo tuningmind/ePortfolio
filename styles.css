@@ -6,8 +6,9 @@
 
 html {
   font-family: 'Courier New';
+  font-size: 16px;
   color: #bebebe;
-  width: 100vw;
+  /*width: 100vw;*/
 }
 
 body {
@@ -16,11 +17,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover; 
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 header {
-  height: 4.1em;
-  padding: 1.3em 0 1em 2em;
+  padding: 1.3em 0 1.3em 2em;
   background-color: rgb(38, 26, 13);
   display: flex;
   flex-direction: column;
@@ -29,7 +32,7 @@ header {
 }
 
 .main-header {
-  height: 4.5em;
+  /*height: 4.1em;*/
 }
 
 .sub-header {
@@ -41,10 +44,9 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
 
-.sidebar {
+aside {
   width: 220px;
   display: flex;
   flex-direction: column;
@@ -61,16 +63,19 @@ main {
 article {
   display:flex;
   flex-direction: column;
-  justify-content: flex-start;
   width: 40vw;
   background-color: #bebebe;
   color: rgb(38, 26, 13);
   font-weight: bold;
-  padding: 4em 0;
+  padding: 4em 0 ;
   margin: 40px 0;
   -moz-border-radius: 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+article > p {
+  justify-content: flex-start;
 }
 
 article a {
@@ -111,7 +116,7 @@ h2, h3 {
 }
 
 h3, h4, h5 {
-  padding-left: 3rem;
+  padding: 1em 1em 1em 3rem;
 }
 
 .bold {
@@ -194,11 +199,37 @@ img#human {
   background-color: #160d03;
 }
 
-details {
-  padding: 1rem 0 0 2rem;
+#sw2100 {
+  width: 80vw;
 }
 
-details p {
-  padding-left: 1em;
-  width: 35vw;
+details {
+  padding: 1em 1em 1em 3em;
+  background-color: #bebebe;
+  width: 100%;
+}
+
+details > summary {
+  width: 30em;
+  padding: .5em;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  border-radius: 3px;
+}
+
+details > p {
+  background-color: #ddd;
+  padding: 1.5em;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
+
+
+/**************************/
+@media screen and (max-width: 360px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
 }
