@@ -61,6 +61,7 @@ aside {
 article {
   display:flex;
   flex-direction: column;
+  flex-basis: 50%;
   background-color: #bebebe;
   color: rgb(38, 26, 13);
   font-weight: bold;
@@ -221,7 +222,7 @@ details > p {
 
 
 /**************************/
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1100px) {
     main {
         height: 100%;
         flex-direction: column;
