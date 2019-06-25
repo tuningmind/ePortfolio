@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>guessing game</title>
+        <link rel="stylesheet" href="guessing.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="guessing.js"></script>
+    </head>
+    <body onload="initialize()">
+        <form name="guessForm" action="javascript:checkGuess()">
+            Your Guess: 
+            <input type='text' 
+                   name='userGuess' 
+                   value='' 
+                   size='10' 
+                   style="width:200px; margin-top:10px"
+                   maxlength='2'> 
+            <input type="button" 
+                   id="aGuess" 
+                   value="Your guess"
+                   style="width:210px"
+                   onClick="checkGuess()">
+            <input type="reset" 
+                   value="Reset the form" 
+                   style="width:210px"
+                   onClick="stopInterval()"> 
+            <input type="button" 
+                   value="Exit" 
+                   style="width:210px"
+                   onSubmit="exit()">
+            <div id="msg"></div>
+            <img   src="./img/kid-playing.jpg" 
+                   id="picture"
+                   name="thePicture">
+        </form>
+    </body>
+</html>
+

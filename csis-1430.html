@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>1430 server</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="csis-1430.css">
+	</head>
+	<body>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <aside class="col-lg-3">
+                        <p id="header">CSIS-1430, in which I play around with making websites, and okay, do CS homework too</p>
+                        <a href="company.html">Penfield Company</a>
+                        <a href="simply-me.html">Simply Me</a>
+                        <a href="tic-tac-toe.html">Tic-tac-toe</a>
+                        <a href="guessing.html">Guessing game</a>
+                        <a href="keto.html">Keto pizza</a>
+                        <a href="littleBoxes.html">Little boxes</a>
+                        <a href="https://tuningmind.github.io/penfield/">Penfield Origins</a>
+                        <a href="https://twitter.com/penfield">More Penfield Settings</a>
+                        <a href="https://everything2.com/user/Aquarion/writeups/Do+Androids+Dream+of+Electric+Sheep%253F">An android goes to sleep</a>
+                        <a href="https://www.shmoop.com/do-androids-dream-of-electric-sheep/penfield-mood-organ-symbol.html">Symbolism of the Penfield</a>
+                        <a href="https://www.shmoop.com/do-androids-dream-of-electric-sheep/mercerism-symbol.html">Mercerism</a>
+                        <a href="map.html">Map</a>
+                        <a href="http://slcc.edu">SLCC</a>
+                        <a href="http://www.w3schools.com">W3 Schools</a>
+                    </aside>
+                    <div class="content col-lg-6">
+                        <p class="quote bubble1">What did you do in your 1430 class?</p>
+                        <p class="quote bubble2">
+                            Funny you should ask...<br>Check out the links!
+                            These websites required a bunch of different weird skills. 
+                            I made them for a laugh as well as for assignments.
+                        </p>
+                        <div id="speaking">
+                            <img src="./img/left-speaking.jpg">
+                            <img src="./img/right-speaking.jpg">
+                        </div>
+                        <p class="quote bubble3">Cool, I will! 
+                            Can you tell me what tech the class covered? I'm thinking of
+                            taking it next semester.
+                            </p>
+                        <p class="quote bubble4">
+                            So many things! It was awesome.
+                        </p>
+                        <p class="quote bubble4">
+                            We started out
+                            counting pixels on the screen 
+                            by the end we
+                            were making responsive pages. 
+                        </p>
+                        <p class="quote bubble4">
+                            You should totally take the class. 
+                        </p>
+                        <p class="quote bubble4">
+                            BTW, some of those links were not
+                            made by me, but they're fun resources.
+                        </p>
+                        <div id="speaking">
+                            <img src="./img/left-speaking.jpg">
+                            <img src="./img/right-speaking.jpg">
+                        </div>
+                    </div> <!--content-->
+                    <!--
+                    <div class="col-lg-3 slideanim">
+                        <p class="bubble">HTML</p>
+                    </div>
+                    <div class="col-lg-3 slideanim">
+                        <p class="bubble">CSS</p>
+                    </div>
+                    <div class="col-lg-3 slideanim">
+                        <p class="bubble">JavaScript</p>
+                    </div>
+                    -->
+                </div> <!--row-->
+            </div> <!--container-->
+        </main>
+    <script>
+        $(window).scroll(function() {
+        $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+            $(this).addClass("slide");
+            }
+        });
+        });
+    </script>
+	</body>
+</html>

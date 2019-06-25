@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>tic tac toe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+        <script type="text/javascript" src="tic-tac-toe.js"></script>
+        <link rel="stylesheet" href="tic-tac-toe.css">
+    </head>
+    <body onload="start()">
+        <h1>Tic-Tac-Toe</h1>
+        <h2 id="player"></h2>
+        <div class="table"> <!--tic tac toe grid-->
+            <div class="row">
+                <div class="cell" onclick="playerMoved(this,1)"></div>
+                <div class="cell" onclick="playerMoved(this,2)"></div>
+                <div class="cell" onclick="playerMoved(this,4)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="playerMoved(this,8)"></div>
+                <div class="cell" onclick="playerMoved(this,16)"></div>
+                <div class="cell" onclick="playerMoved(this,32)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="playerMoved(this,64)"></div>
+                <div class="cell" onclick="playerMoved(this,128)"></div>
+                <div class="cell" onclick="playerMoved(this,256)"></div>
+            </div>
+        </div> <!--end of tic tac toe grid-->
+        <div id="who-won"></div>
+        <div id="player1wins"></div>
+        <div id="player2wins"></div>
+        <div id="cat"></div>
+        <div id="cells-used"></div>
+    </body>
+</html>

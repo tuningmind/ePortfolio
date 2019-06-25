@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keto Pizza</title>
+        <meta char="utf8">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="keto.css">
+    </head>
+    <body>
+        <main>
+            <div id="heading">
+                <h1>Keto Pizza</h1>
+                <h2>Pizza you don't have to die for</h2>
+            </div>
+            <div id="tagline">
+                <img id="tagimage" src="./img/keto.jpg">
+                <p> Now you can have your low-carb
+                and eat it too!
+                We make a full line of mouth-watering pizza
+                that will keep you in keto.</p>
+            </div>
+            <form>
+                <div id="top">
+                    <div id="who">
+                        <label for="name">Name:</label>
+                        <input class="tall" type="text" name="name">
+                        <label for="phone">Phone:</label>
+                        <input class="tall" type="text" name="phone">
+                        <label for="email">Email:</label>
+                        <input class="tall" type="text" name="email">
+                    </div> <!--who-->
+
+                    <div id="where">
+                        <label for="address">Address:</label>
+                        <input class="tall" type="text" name="address">
+                        <label for="city">City:</label>
+                        <input class="tall" type="text" name="city">
+                    </div> <!--where-->
+                </div> <!--top-->
+
+                <div id="what">
+                    <!--crust-->
+                    <h3>Crust</h3>
+                    <fieldset>
+                        <div class="right">
+                            Coconut  <input type="radio" name="crust" value="coconut" checked>
+                        </div>
+                        <div class="right">
+                            Cheese <input type="radio" name="crust" value="cheese">
+                        </div>
+                        <div class="right">
+                            Cashews <input type="radio" name="crust" value="cashews">
+                        </div>
+                        <div class="right">
+                            Egg <input type="radio" name="crust" value="egg">
+                        </div>
+                    </fieldset>
+
+                    <!--size-->
+                    <h3>Size</h3>
+                    <select class="tall">
+                        <option value="large">Large</option>
+                        <option value="medium">Medium</option>
+                        <option value="small">Small</option>
+                    </select>
+
+                    <!--toppings-->
+                    <h3>Toppings</h3>
+                    <fieldset>
+                        <div class="right">
+                            Mushrooms <input type="checkbox" name="toppings" value="mushrooms"> 
+                        </div>
+                        <div class="right">
+                            Olives <input type="checkbox" name="toppings" value="olives"> 
+                        </div>
+                        <div class="right">
+                            Peppers <input type="checkbox" name="toppings" value="peppers"> 
+                        </div>
+                        <div class="right">
+                            Basil <input type="checkbox" name="toppings" value="basil"> 
+                        </div>
+                        <div class="right">
+                            Broccoli <input type="checkbox" name="toppings" value="broccoli"> 
+                        </div>
+                        <div class="right">
+                            Cauliflower <input type="checkbox" name="toppings" value="cauliflower"> 
+                        </div>
+                        <div class="right">
+                            Spinach <input type="checkbox" name="toppings" value="spinach"> 
+                        <div>
+                    </fieldset>
+
+                    <!--comments-->
+                    <h3>Comments</h3>
+                    <input type="text" id="commentbox" name="comments"> 
+
+                    <!--buttons-->
+                    <h3>Submit</h3>
+                    <input class="tall" type="submit" value="Submit">
+                    <input class="tall" type="reset" value="Reset">
+                </div> <!--what-->
+            </form>
+        </main>
+    </body>
+</html>
+
+

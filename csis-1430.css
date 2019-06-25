@@ -1,0 +1,224 @@
+html {
+    box-sizing: border-box;  
+    font-size: 18px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #d7d7b5;
+    font-family: serif;
+    background-image: url("./img/radio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 30vw; 
+    border-width: 2px 1px 2px 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: #171100;
+    background-color: #261f02;
+}
+img {
+    height: 350px;
+    width: 220px;
+    border-radius: 30px;
+    margin-left: 2vw;
+    margin-bottom: 1.5em;
+}
+#header {
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: black;
+    background: #d7d7b5;
+    margin: 0;
+    display: flex;
+    padding: 18px 18px 18px 10px;
+}
+main {
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.content {
+    margin: 0 auto;
+    /*width: 70vw;*/
+    border-width: 2px 2px 2px 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #8a7b36;
+}
+a {
+    background-color: #585047;
+    border: 2px solid #dad9d1;
+    box-shadow: inset 2px 2px 10px #444038, 2px 2px 5px #090502;
+    color: #f4f1d7;
+    padding: 1em 2em;
+    font-family: 'Courier New';
+    text-decoration: none;
+    border-radius: 3px;
+    width: 15vw;
+    font-size: 1.2vw;
+    margin: 20px auto;
+}
+h2 {
+    margin-top: 35px;
+}
+ul {
+    list-style-type: none;
+}
+.left-margin {
+    margin-left: 125px;
+}
+.quote {
+    font-size: 2vw;
+}
+.bubble1 {
+    position: relative;
+    width: 30vw;
+    height: 5vw;
+    left: 10px;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    padding: 22px 30px 30px 30px;
+    background: #e0dbbf;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.bubble1:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 19px 0;
+    border-color: #e0dbbf transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-left: -19px;
+    bottom: -15px;
+    left: 15%;
+}
+.bubble2 {
+    position: relative;
+    margin-bottom: 1.5em;
+    width: 20vw;
+    height: 14vw;
+    left: 180px;
+    font-size: 1.3em;
+    padding: 22px 30px 30px 30px;
+    background: #e0dbbf;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.bubble2:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 19px 0;
+    border-color: #e0dbbf transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-left: -19px;
+    bottom: -15px;
+    left: 70%;
+}
+.bubble3 {
+    position: relative;
+    margin-bottom: 1.5em;
+    width: 30vw;
+    height: 6vw;
+    left: 10px;
+    font-size: 1.3em;
+    padding: 22px 30px 30px 30px;
+    background: #e0dbbf;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.bubble3:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 19px 0;
+    border-color: #e0dbbf transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-left: -19px;
+    bottom: -15px;
+    left: 15%;
+}
+.bubble4 {
+    position: relative;
+    margin-bottom: 1.5em;
+    width: 23vw;
+    height: 8vw;
+    left: 180px;
+    font-size: 1.3em;
+    padding: 22px 30px 30px 30px;
+    background: #e0dbbf;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.bubble4:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 19px 0;
+    border-color: #e0dbbf transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-left: -19px;
+    bottom: -15px;
+    left: 70%;
+}
+.bubble {
+    height: 3vw;
+    width: 5vw;
+    border-radius: 30px;
+    background: #e0dbbf;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

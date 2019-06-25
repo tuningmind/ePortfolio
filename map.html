@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Utah Map</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
+        <link rel="stylesheet" href="map.css"/>
+
+	</head>
+	<body>
+        <div class="text">Oh, the Places I've Been!</div>
+        <div class="text text-sm">hover on Seuss to see my places</div>
+        <img src="img/utahmap.bmp" 
+             alt="box" 
+             usemap="#utahmap"
+             name="utahmap"
+             >
+        <map name="utahmap">
+            <div class="container">
+                <area shape="rect"
+                    class="overlay" 
+                    coords="319,111,509,255"
+                    alt="great-seuss-lake"
+                    href="https://stateparks.utah.gov/parks/great-salt-lake/"
+                    onMouseOver="utahmap.src='img/utahmap-lake.bmp'"
+                    onMouseOut="utahmap.src='img/utahmap.bmp'"
+                    >
+            </div>
+            <div class="container">
+                <area shape="rect"
+                    coords="213,268,412,424"
+                    alt="seusski"
+                    href="https://www.ski.com/park-city-beginner-skiing"
+                    onMouseOver="utahmap.src='img/utahmap-ski.bmp'"
+                    onMouseOut="utahmap.src='img/utahmap.bmp'"
+                    >
+            </div>
+            <div class="container">
+                <area shape="rect" 
+                    coords="135, 427, 270, 598" 
+                    alt="seuss's"
+                    href="https://www.nps.gov/zion/index.htm"
+                    onMouseOver="utahmap.src='img/utahmap-zions.bmp'"
+                    onMouseOut="utahmap.src='img/utahmap.bmp'"
+                    >
+            </div>
+            <div class="container">
+                <area shape="rect"
+                    coords="925,118, 1088,255"
+                    alt="grinchland"
+                    href="https://www.nps.gov/dino/index.htm"
+                    onMouseOver="utahmap.src='img/utahmap-grinchland.bmp'"
+                    onMouseOut="utahmap.src='img/utahmap.bmp'"
+                    >
+            </div>
+            <div class="container">
+                <area shape="rect" 
+                    coords="1047, 257, 1197, 427" 
+                    alt="ballooning"
+                    href="http://canyonlandsballooning.com/"
+                    onMouseOver="utahmap.src='img/utahmap-balloon.bmp'"
+                    onMouseOut="utahmap.src='img/utahmap.bmp'"
+                    >
+            </div>
+            <div class="container">
+                <area shape="rect" 
+                    coords="1138, 435, 1342, 598" 
+                    alt="anaseussi"
+                    href="https://stateparks.utah.gov/parks/anasazi/"
+                    onMouseOver="utahmap.src='img/utahmap-anasazi.bmp'"
+                    onMouseOut="utahmap.src='img/utahmap.bmp'"
+                    >
+            </div>
+        </map>
+	</body>
+</html>

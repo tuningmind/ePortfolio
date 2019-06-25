@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Schoolbell', cursive;
+}
+body {
+    background-color: black;
+}
+img {
+    width: 1426px;
+    height: 689px;
+}
+.text {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+.text-sm {
+    font-size: 1em;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 213;
+    right: 412;
+    background-color: #008CBA;
+    overflow: hidden;
+    -webkit-transform:scale(0);
+    transition: .3s ease;
+    background-image: url("salt-lake.jpg");
+}
+.container:hover .overlay {
+    transform: scale(1)
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}

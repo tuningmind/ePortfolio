@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Little Boxes</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <style>
+            :root {
+                --maroon: rgb(83,20,0);
+                --choc-red: #1d0b00;
+                --choc: #1a0f00;
+                --warm-black: #2e1300;
+                --dial-border: #281100;
+                --smoky-orange: #cc7700;
+                --dark-orange: #ff9400;
+                --med-orange: rgba(254, 148, 0, 0.8);
+                --lt-orange: #fef3a1;
+                --copper-lt: #f5bf9c;
+                --copper-md: #9c5130;
+            }
+            body
+            {
+                background-image: url("./img/wood.jpg");
+                background-repeat: norepeat;
+                background-size: cover;
+                box-sizing: border-box;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 100;
+                font-size: 12px;
+                letter-spacing: .15em;
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            h1, h2, h3 {
+                text-align: center;
+            }
+            div {
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+            }
+            img {
+                width: 95vw;
+                border: 10px solid var(--dial-border);
+                border-radius: 15px 15px 15px 15px;
+                box-shadow: inset 0px -9px 26px 10px rgba(254, 148, 0, 0.8);
+                margin-left: 12px;
+            }
+            div.box1
+            {
+                display: inline-block;
+                font-size: 4em;
+                font-weight: 800;
+                color: var(--smoky-orange);
+                background-color: var(--choc-red);
+                border: 10px solid var(--dial-border);
+                border-radius: 15px 15px 15px 15px;
+                box-shadow: inset 0px -9px 26px 10px rgba(254, 148, 0, 0.8);
+                margin: 2px;
+                padding:10px 40px 0px 50px;
+                height: 150px;
+                width:auto;
+                position:absolute;
+                top:110px;
+                left:300px;        
+            }
+            .tick {
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                font-weight: 100;
+                position: relative;
+            }
+            .tick:hover {
+                color: var(--lt-orange);
+                /*background-color: rgba(250, 243, 161, 0.5);*/
+            }
+            .ticklabel {
+                font-size: .5em;
+                padding: 0 0 0 41px;
+            }
+            .labels {
+                padding-left: 20px;
+            }
+            div.containerBox
+            {
+                background-color: var(--dark-orange);
+                border-radius: 50%;
+                border: 3px dashed #1a0f00;
+                padding: 10px;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                height: 200px;
+                width: 200px;
+                font-size: .9em;
+                background: radial-gradient(ellipse at center, var(--copper-lt), var(--copper-md)); 
+            }
+            div.shadowBox
+            {
+                background-color: var(--choc);
+                position:relative;
+                top: 0px;
+                left:40px;
+                margin-bottom:5px;
+                margin-right:5px;
+                height:220px;
+                width: 220px;
+                border-radius: 50%;
+                box-shadow: 0 0 10px 2px var(--dial-border);
+                border: 6px dashed #1a0f00;
+            }    
+            .floating-box 
+            {
+                float: left;
+                width: auto;
+                height: 15px;
+                margin: 10px;
+                border-radius: 5px;
+                border: 2px solid var(--warm-black);
+                background-color: var(--copper-md);
+                color: var(--choc);
+                padding: 8px;
+                font-weight: 900;
+            }
+           .floating-box:hover {
+                background-color: var(--warm-black);
+                color: var(--med-orange);
+            }
+            .after-box {
+                clear: left;
+            }
+            span.number {
+                padding-right: 10px;
+            }
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            div.containerBox-small
+            {
+                background-color: var(--dark-orange);
+                border-radius: 50%;
+                border: 3px dashed #1a0f00;
+                padding: 10px;
+                margin-bottom: 25px;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                height: 100px;
+                width: 100px;
+                font-size: .9em;
+                background: radial-gradient(ellipse at center, var(--copper-lt), var(--copper-md)); 
+            }
+            div.shadowBox-small
+            {
+                background-color: var(--choc);
+                position:relative;
+                top: 0px;
+                left:40px;
+                margin-bottom:5px;
+                margin-right:250px;
+                height:120px;
+                width: 120px;
+                border-radius: 50%;
+                box-shadow: 0 0 10px 2px var(--dial-border);
+                border: 6px dashed #1a0f00;
+            }    
+
+
+        </style>
+    </head>
+    <body>
+        <h1> Your Personalized Penfield Mood Organ </h1>
+        <h3> A setting for every mood. Thousands to choose from! </h3> 
+        <div class='box1'> <!--tick marks-->
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">|</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">|</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">|</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">|</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">|</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">|</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">|</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">|</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            <div class="tick">'</div>
+            </br>
+            <div class="labels">
+                <div class="ticklabel">100</div>
+                <div class="ticklabel">200</div>
+                <div class="ticklabel">300</div>
+                <div class="ticklabel">400</div>
+                <div class="ticklabel">500</div>
+                <div class="ticklabel">600</div>
+                <div class="ticklabel">700</div>
+                <div class="ticklabel">800</div>
+            </div>
+
+        </div>
+        <div class='shadowBox'>
+            <div class='containerBox'>
+            </div>    
+        </div>
+
+        <h2>Settings</h2>
+
+        <div class="clearfix">
+            <div class="floating-box"><a href="penfield-excerpts/excerpt003.html#n003"><span class="number">003</span> Desire to dial</a></div>
+            <div class="floating-box"><a href="penfield-excerpts/excerpt100.html#n100"><span class="number">100</span> Creative and fresh attitude towards my job</a></div>
+            <div class="floating-box"><a href="penfield-excerpts/excerpt101.html#n101"><span class="number">101</span> Despair</a></div>
+            <div class="floating-box"><a href="penfield-excerpts/excerpt102.html#n102"><span class="number">102</span> Self-accusatory depression</a></div>
+            <div class="floating-box"><a href="penfield-excerpts/excerpt103.html#n103"><span class="number">103</span> Business-like professional attitude</a></div>
+            <div class="floating-box"><a href="penfield-excerpts/excerpt104.html#n104"><span class="number">104</span> Ecstatic sexual bliss</a></div>
+            <div class="floating-box"><a href="penfield-excerpts/excerpt382.html#n382"><span class="number">382</span> Emotional detachment</a></div>
+            <div class="floating-box"><a href="penfield-excerpts/excerpt481.html#n481"><span class="number">481</span> Awareness of the manifold opportunities open to me</a></div>
+            <div class="floating-box"><a href="penfield-excerpts/excerpt594.html#n594"><span class="number">594</span> Pleased acknowledgment of spouse's superior wisdom</a></div>
+            <div class="floating-box"><a href="penfield-excerpts/excerpt888.html#n888"><span class="number">888</span> Desire to watch TV no matter what's on it</a></div>
+        </div>
+
+        <div class="after-box">
+            <img src="./img/bedroom.png" alt="bedroom with penfield">
+        </div>
+
+        <div>
+            <div class='shadowBox-small'>
+                <div class='containerBox-small'></div>    
+            </div>
+            <div class='shadowBox'>
+                <div class='containerBox'></div>    
+            </div>
+            <div class='shadowBox-small'>
+                <div class='containerBox-small'></div>    
+            </div>
+            <div class='shadowBox'>
+                <div class='containerBox'></div>    
+            </div>
+        </div>
+
+
+    </body>    
+</html>       
