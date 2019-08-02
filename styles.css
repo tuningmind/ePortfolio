@@ -64,7 +64,10 @@ article {
   flex-basis: 50%;
   background-color: #bebebe;
   color: rgb(38, 26, 13);
-  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .05em;
+  line-height: 1.5em;
+  font-weight: medium;
   padding: 4em 0 ;
   margin: 2em;
   -moz-border-radius: 10px;
@@ -219,6 +222,8 @@ details > p {
   margin: 0;
   box-shadow: 3px 3px 4px black;
 }
+
+
 
 
 /**************************/
