@@ -73,10 +73,12 @@ article {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  box-shadow: inset 1px 1px 12px #000; 
 }
 
 article > p {
   justify-content: flex-start;
+  margin: 1em;
 }
 
 article a {
@@ -94,9 +96,10 @@ p {
 }
 
 img {
-  width: 100%;
+  width: 95%;
   padding: 3em;
   background-color: #bebebe;
+  margin: 1em;
 }
 
 #t-shirt {
@@ -108,6 +111,8 @@ h2, h3, h4, h5 {
   font-weight: normal;
   background-color: #bebebe;
   color: rgb(38, 26, 13);
+  width: 95%;
+  margin: 1em;
 }
 
 h2, h3 {
@@ -151,9 +156,11 @@ a {
   text-indent: 0;
 }
 
+/*
 .italic {
   font-style: italic;
 }
+*/
 
 ul {
   background-color: #bebebe;
@@ -204,7 +211,8 @@ img#human {
 details {
   padding: 1em 1em 1em 3em;
   background-color: #bebebe;
-  width: 100%;
+  width: 95%;
+  margin: 1em;
 }
 
 details > summary {
@@ -219,7 +227,7 @@ details > summary {
 details > p {
   background-color: #ddd;
   padding: 1.5em;
-  margin: 0;
+  margin: 1em;;
   box-shadow: 3px 3px 4px black;
 }
 
